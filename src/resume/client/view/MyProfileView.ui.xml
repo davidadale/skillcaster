@@ -1,0 +1,105 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:r="urn:import:com.rippleware.gwt.client.ui"
+	xmlns:resume="urn:import:resume.client.component">
+	<ui:style>
+	
+		.header {
+			padding: 10px 10px 20px 20px;
+			min-width: 700px;
+		}
+	
+		
+		.profilePic {
+			float: left;
+			width: 190px;
+		}
+		
+		.profileInfo {
+			float: left;
+			padding-top: 30px;
+			max-width: 190px;
+			min-width: 150px;
+		}
+		
+		.profileInfo .name {
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+		
+		.profileInfo .title {
+			font-size: 1.2em;
+		}
+		
+		.bio {
+			padding-top: 30px;
+			float: right;
+			margin-right:10px;
+			width: 50%;
+			font-size: 1.0em
+		}
+		
+		.listOfThings {
+			margin-top: 5px;
+		}
+		
+		.listBar {
+			border: 1px solid #dedeaf;
+			background: #D0E4F6;
+		}
+		
+		.skillPanel {
+			padding-left: 10px;
+		}
+		
+		.skillPanel header {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		
+		.skillPanel ul {
+			list-style: none;
+			margin: 0 10px 5px 0;
+			padding: 0 0 0 0;
+		}
+		
+		.skillPanel ul li p b{
+			color:#666666;
+			}
+		
+		.box {
+			margin: 5px 10px 5px 20px;
+		}
+	</ui:style>
+
+	<g:DockLayoutPanel ui:field="layout">
+		<g:east size="300">
+			<g:HTMLPanel addStyleNames="{style.skillPanel}">
+				<header>Skills</header>
+				<r:UnorderedList ui:field="skills"></r:UnorderedList>
+			</g:HTMLPanel>
+		</g:east>
+		<g:north size="200">
+			<g:HTMLPanel>
+				<resume:ResumeMenuBar ui:field="menuBar"></resume:ResumeMenuBar>
+				<div class="{style.header}">
+					<div class="{style.profilePic}">
+						<r:ImageUploader ui:field="profileImage" />
+					</div>
+					<div class="{style.profileInfo}">
+						<div ui:field="name" class="{style.name}"></div>
+						<div ui:field="title" class="{style.title}"></div>
+						<div ui:field="company" class="{style.title}"></div>
+					</div>
+					<div class="{style.bio}">
+						<r:EditableLabel ui:field="bioLabel"></r:EditableLabel>
+					</div>
+				</div>
+			</g:HTMLPanel>
+		</g:north>
+		<g:center>
+			<r:CoolList ui:field="accomplishments" addStyleNames="{style.box}"></r:CoolList>
+		</g:center>
+
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

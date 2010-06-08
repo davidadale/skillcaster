@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='resume'>
+
+	<inherits name='com.google.gwt.user.User' />	
+	<inherits name="com.google.gwt.inject.Inject" />
+	<inherits name='net.customware.gwt.dispatch.Dispatch' />
+	<inherits name='net.customware.gwt.presenter.Presenter' />
+	<inherits name='com.pietschy.gwt.pectin.Pectin'/>
+	<inherits name="com.allen_sauer.gwt.log.gwt-log-DEBUG" />
+
+	<inherits name='com.rippleware.gwt.Rippleware'/>	
+	<set-property name="log_DivLogger" value="DISABLED" />
+	<!-- inherits name='com.google.gwt.user.theme.chrome.ChromeResources' /-->
+	<!-- inherits name='com.google.gwt.user.theme.dark.Dark' /-->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+
+
+	<!-- inherits name='com.sensei.themes.blue.Blue'/-->
+
+	<!-- inherits name='com.rippleware.gwt.theme.dark.Dark'/-->
+
+	<!-- stylesheet src='gwt/standard/standard.css'/ -->
+	
+	<!-- stylesheet src='resume/dark/dark.css'/-->
+
+	<entry-point class='resume.client.Resume' />
+
+	<source path='client' />
+	<source path='shared' />
+
+</module>

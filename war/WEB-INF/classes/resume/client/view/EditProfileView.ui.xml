@@ -1,0 +1,103 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p="urn:import:com.pietschy.gwt.pectin.client.components"
+	xmlns:v="urn:import:com.pietschy.gwt.pectin.client.validation.component"
+	xmlns:resume="urn:import:com.pietschy.gwt.pectin.client.components">
+
+	<ui:style>
+		.scrollingArea {
+			margin-left: 20px;
+			height: 95%;
+		}
+		
+		.leftColumn {
+			float: left;
+		}
+		
+		.rightColumn {
+			float: right;
+			margin-right: 20%;
+		}
+		
+		.name {
+			width: 22em;
+		}
+		
+		.title {
+			width: 11em;
+		}
+		
+		.company {
+			width: 11em;
+		}
+		
+		.gap {
+			height: 20px;
+		}
+	</ui:style>
+
+	<ui:style field="otherStyles" type="resume.client.view.EditProfileView.Style">
+		.email {
+			width:22em;
+		}
+		
+		.website {
+			width:22em;
+		}
+	</ui:style>
+
+	<g:HTMLPanel addStyleNames="screen">
+
+		<!-- Toolbar for the screen -->
+		<div class="toolbar">
+			<g:Button ui:field="save">Save</g:Button>
+			<g:Button ui:field="cancel">Cancel</g:Button>
+		</div>
+
+		<g:ScrollPanel addStyleNames="{style.scrollingArea}">
+
+			<g:HTMLPanel>
+
+				<!--  Outer wrapper to setup screen bounds -->
+				<div class="{style.leftColumn}">
+
+					<div>
+						<g:TextBox ui:field="name" addStyleNames="{style.name}"></g:TextBox>
+						<v:ValidationDisplayLabel ui:field="label"></v:ValidationDisplayLabel>
+					</div>
+
+					<div>
+						<g:TextBox addStyleNames="{style.title}" ui:field="title" />
+						<g:TextBox addStyleNames="{style.company}" ui:field="company" />
+					</div>
+					<div class="{style.gap}"></div>
+					<div>
+						<label>Email</label>
+						<g:FlowPanel ui:field="emailElement"></g:FlowPanel>
+					</div>
+					<div class="{style.gap}"></div>
+					<div>
+						<label>Phone Number</label>
+						<g:FlowPanel ui:field="phoneNumberElement"></g:FlowPanel>
+					</div>
+					<div class="{style.gap}"></div>
+					<div>
+						<label>Address</label>
+						<g:FlowPanel ui:field="addressElement"></g:FlowPanel>
+					</div>
+				</div>
+				<div class="{style.rightColumn}">
+					<div>
+						<label>Website</label>
+						<g:FlowPanel ui:field="websiteElement"></g:FlowPanel>
+					</div>
+					<div class="{style.gap}"></div>
+					<div>
+						<label>Blog</label>
+						<g:FlowPanel ui:field="blogElement"></g:FlowPanel>
+					</div>
+				</div>
+			</g:HTMLPanel>
+		</g:ScrollPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

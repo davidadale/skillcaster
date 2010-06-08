@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:date="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+
+		<div class="toolbar">
+			<g:Button ui:field="save">Save</g:Button>
+			<g:Button ui:field="cancel">Cancel</g:Button>
+		</div>
+		
+		<div>
+			<label>School</label>
+			<g:TextBox ui:field="school"></g:TextBox>
+		</div>
+
+		<div>
+			<label>Degree</label>
+			<g:TextBox ui:field="degree"></g:TextBox>
+		</div>
+		<div>
+			<label>Completed</label>
+			<date:DateBox ui:field="completed"></date:DateBox>
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

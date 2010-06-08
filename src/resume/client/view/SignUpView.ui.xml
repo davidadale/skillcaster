@@ -1,0 +1,83 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:resume="urn:import:com.rippleware.gwt.client.ui">
+	<ui:style>
+		
+		.wrapper {
+			width: 80%;
+			margin: 20px 0 0 20px;
+		}
+
+		.signUpField {
+			width: 40em;
+			padding: 0.8em;			
+		}
+
+		.signUpField label {
+			font-size:1.2em;
+			width: 10em;
+			display:block;
+			float:left;
+		}
+		
+		.signUpField input[type="password"], .signUpField input[type="text"] {
+			font-size:1.2em;
+			width: 20em;
+		}
+
+		
+		.buttons{
+			width: 38em;
+			text-align:right;	
+		}
+		
+
+		
+		.gap {
+			height: 20px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel>
+	
+	
+
+	<div class="{style.wrapper}">
+
+		<div class="{style.signUpField}">
+			<label>Email</label>
+			<g:TextBox ui:field="email"></g:TextBox>
+		</div>
+
+		<div class="{style.signUpField}">
+			<label>Confirm Email</label>
+			<g:TextBox ui:field="confirmEmail"></g:TextBox>
+		</div>
+
+		<div  class="{style.signUpField}">
+			<label>Password</label>
+			<g:PasswordTextBox ui:field="password"></g:PasswordTextBox>
+		</div>
+
+		<div  class="{style.signUpField}">
+			<label>Confirm Password</label>
+			<g:PasswordTextBox ui:field="confirmPassword"></g:PasswordTextBox>
+		</div>
+
+		<div  class="{style.signUpField}">
+			<label>Full Name</label>
+			<g:TextBox ui:field="fullname"></g:TextBox>
+		</div>
+
+		<div class="{style.signUpField}" >
+			<label>Company</label>
+			<g:TextBox ui:field="company"></g:TextBox>
+		</div>
+
+		<div class="{style.buttons}">
+			<g:Button ui:field="signUp">Sign Up</g:Button>
+		</div>
+	</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

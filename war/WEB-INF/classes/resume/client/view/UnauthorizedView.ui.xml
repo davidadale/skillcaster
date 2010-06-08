@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:resume="urn:import:com.rippleware.gwt.client.ui">
+	
+	<ui:style>
+		.height {
+			float:left;
+			margin-right:1.2em;
+			margin-top:100px;
+		}
+		
+		.layout-centered {
+			height: 700px;
+			margin: 0 auto;
+		}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<div style="float:left;padding-left:50px;padding-right:20px;">
+			<img src="images/mockup.png"/>
+		</div>
+		
+		<div class="{style.layout-centered}">
+			<g:FlowPanel addStyleNames="{style.height}" ui:field="tabs" />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

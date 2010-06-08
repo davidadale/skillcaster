@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:date="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.screen label{
+			width:100px;
+			display:block;	
+			}
+	</ui:style>
+	<g:HTMLPanel addStyleNames="{style.screen}"> 
+		<!-- Toolbar for the screen -->
+		<div class="toolbar">
+			<g:Button ui:field="save">Save</g:Button>
+			<g:Button ui:field="cancel">Cancel</g:Button>
+		</div>
+
+		<div>
+			<label>Company</label>
+			<g:TextBox ui:field="company"></g:TextBox>
+			
+		</div>
+
+		<div>
+			<label>Role</label>
+			<g:TextBox ui:field="role"></g:TextBox>
+		</div>
+
+		<div>
+			<label>Completed</label>
+			<date:DateBox ui:field="completed"></date:DateBox>
+			<g:Label ui:field="label"></g:Label>
+			
+		</div>
+		<div>
+			<label>Short Description</label>
+			<g:TextArea ui:field="shortDescription"></g:TextArea>
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

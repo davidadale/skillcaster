@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+				<g:MenuBar>
+					<g:MenuItem>
+						Add Stuff
+						<g:MenuBar vertical="true">
+							<g:MenuItem ui:field="addWorkExperienceMnu">Work Experience</g:MenuItem>
+							<g:MenuItem ui:field="addEducationMnu">Education</g:MenuItem>
+						</g:MenuBar>
+					</g:MenuItem>
+					<g:MenuItem>
+						Edit Stuff
+						<g:MenuBar vertical="true">
+							<g:MenuItem ui:field="editProfileImageMnu">Profile Image</g:MenuItem>
+							<g:MenuItem ui:field="editProfileMnu">Profile</g:MenuItem>
+							<g:MenuItem ui:field="editBioMnu">Bio</g:MenuItem>
+							<g:MenuItem ui:field="editSkillsMnu">Skills</g:MenuItem>
+						</g:MenuBar>
+					</g:MenuItem>
+				</g:MenuBar>
+</ui:UiBinder> 

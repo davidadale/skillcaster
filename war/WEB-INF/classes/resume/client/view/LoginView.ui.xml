@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:resume="urn:import:com.rippleware.gwt.client.ui"
+	xmlns:p="urn:import:com.pietschy.gwt.pectin.client.components">
+	<ui:style>
+
+		.wrapper {
+			width: 80%;
+			margin: 20px 0 0 20px;
+		}
+		
+		.loginField {
+			width: 40em;
+			padding: 0.8em;
+		}
+		
+		.loginField label {
+			font-size: 1.2em;
+			width: 10em;
+			display: block;
+		}
+		
+		.loginField input[type="password"],.loginField input[type="text"] {
+			font-size: 1.2em;
+			width: 20em;
+		}
+		
+		.leftSide {
+			width: 60%;
+		}
+		
+		.buttons {
+			text-align: right;
+		}
+		
+		.gap {
+			height: 20px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel addStyleNames="wrapper">
+
+		<div class="{style.wrapper}">
+
+			<div class="{style.leftSide}">
+
+				<div class="{style.loginField}">
+					<label>Username</label><br/>
+					<p:EnhancedTextBox ui:field="username"></p:EnhancedTextBox>
+				</div>
+
+				<div class="{style.loginField}">
+					<label>Password</label><br/>
+					<g:PasswordTextBox ui:field="password"></g:PasswordTextBox>
+				</div>
+				<div class="{style.gap}"></div>
+				<div class="{style.buttons}">
+					<g:Button ui:field="login">Log In</g:Button>
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,26 @@
+
+/*-------------------------------------------------------------------------
+
+	General Styles
+
+-------------------------------------------------------------------------*/
+
+body, table td, select {
+  font-family: Arial Unicode MS, Arial, sans-serif;
+  font-size: small;
+}
+pre {
+  font-family: "courier new", courier;
+  font-size: small;
+}
+body {
+  color: white;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: #000000;
+  direction: ltr;
+}
+a, a:visited, a:hover {
+  color: #0000AA;
+}

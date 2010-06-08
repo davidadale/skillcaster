@@ -1,0 +1,49 @@
+repositories {
+    mavenCentral()
+    mavenCentral name: 'Sonatype Google Snapshots Repository', urls: ["http://oss.sonatype.org/content/repositories/google-snapshots/"]
+}
+
+configurations{
+	test
+	client
+	server
+}
+
+dependencies{
+	test   ('junit:junit:4.8.1')
+	client ('com.google.gwt.inject:gin:1.0')
+	server ('net.customware.gwt.dispatch:gwt-dispatch:1.0.0')
+	server ('net.customware.gwt.presenter:gwt-presenter:1.0.0')
+	server ('com.google.code.gwt-log:gwt-log:2.6.2')
+	server ('commons-logging:commons-logging:1.1.1')
+	server ('log4j:log4j:1.2.9')
+	server ('com.google.inject:guice:2.0')
+	server ('com.google.inject.extensions:guice-servlet:2.0')
+	server ('commons-fileupload:commons-fileupload:1.2.1') 
+	server ('com.google.sitebricks:sitebricks:0.8-SNAPSHOT')
+	server ('com.google.collections:google-collections:1.0')
+	server ('org.mvel:mvel2:2.0.14')
+	server ('dom4j:dom4j:1.6.1')
+}
+
+task refreshTestLibs << {
+	copy{
+		from configurations.test
+		into 'war/WEB-INF/lib'
+	}
+}
+ 
+task refreshClientLibs << {
+	copy {
+		from configurations.client
+		into 'lib'
+	}	
+}
+
+task refreshServerLibs << {
+	copy {
+		from configurations.server
+		into 'war/WEB-INF/lib'
+	}
+}
+

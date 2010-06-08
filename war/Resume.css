@@ -1,0 +1,277 @@
+
+
+
+/**********************************  Global Types **************************************/
+
+table td,select {
+	font-family: Arial Unicode MS, Arial, sans-serif;
+	font-size: small;
+}
+
+pre {
+	font-family: "courier new", courier;
+	font-size: small;
+}
+
+body {
+	margin: 0px;
+	padding: 0;
+	background: #000000;
+	/*url(/reckoning/images/img01.jpg) repeat-x left top;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #63676A;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #649632;
+}
+
+h1 { font-size: 44px; }
+h2 { font-size: 20px; }
+
+ 
+input[type="text"],input[type="password"],textarea {
+	background: rgba(0, 0, 0, .5);
+	border: 1px solid #555555;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+a {
+	color: #649632;
+}
+
+input.url, input.email{
+	width: 22em;
+}
+
+button{
+	color: blue;	
+}
+
+/********************************** End of Global Types *******************************/
+ 
+/************************************ Screen Classes  **********************************/
+ 
+ .screen{
+ 	width:80%;	
+ 	min-width:52em;
+ }
+ 
+ .screen .toolbar{
+ 	padding: 7px;
+ }
+ 
+ .screen .toolbar button{
+ 	color:red;
+ }
+ 
+ .screen .scrollingArea{
+ 	margin-left:20px;
+ 	height:95%;
+ }
+ 
+ .screen .scrollingArea h2{
+ 	padding: 20px 0 2px 0;
+ }
+ 
+ .screen .scrollingArea .leftColumn{
+ 	float:left;
+ 	width: 50%;
+ }
+ 
+ .screen .scrollingAreay .rightColumn{
+ 	float:right;
+ 	width:50%;
+ 	
+ }
+ 
+ /****************************** End of Screen Classes **********************************/
+
+
+.myprofileSummary {
+	padding: 20px;
+}
+
+.myprofileSummary-header {
+	font-size: 1.5em;
+}
+
+.myprofileImage {
+	float: left;
+	padding-right: 20px;
+}
+
+.messageBar { /*background:rgb(245,78,19);*/
+	width: 100%;
+	height: 40px;
+	color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	z-index: 322222;
+}
+
+/** themed tab panel and tab bar */
+.gwt-TabBar {
+	
+}
+
+.gwt-TabBar .gwt-TabBarFirst {
+	width: 5px; /* first tab distance from the left */
+	padding-left: 220px;
+}
+
+.gwt-TabBar .gwt-TabBarRest {
+	
+}
+
+.gwt-TabBar .gwt-TabBarItem {
+	margin-left: 6px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	cursor: hand;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: rgba(255, 255, 255, .3); /*#d0e4f6;*/
+	font-size: 14pt;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+	cursor: default;
+	background: #92c1f0;
+}
+
+.gwt-TabBar .gwt-TabBarItem-disabled {
+	cursor: default;
+	color: #999999;
+}
+
+.resume-TabPanel {
+	
+}
+
+.resume-TabPanel .gwt-TabPanelBottom {
+	width: 700px;
+	height: 30em;
+	background-color: rgb(0, 0, 0);
+	border-color: #92c1f0;
+	border-style: solid;
+	border-width: 3px 2px 2px;
+	overflow: hidden;
+	padding: 6px;
+}
+
+/* end of theme tab panel and tab bar */
+.layout-centered {
+	width: 920px;
+	height: 700px;
+	background: url(front_page_logo.png) no-repeat left top;
+	margin: 0 auto;
+}
+
+.layout-centered .tabs {
+	padding-top: 120px;
+	padding-left: 30px;
+}
+
+.wrapper {
+	width: 920px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+a.register {
+	width: 262px;
+	height: 80px;
+	padding: 10px 60px;
+	background: url(big_blue_button.png) no-repeat left top;
+	/* color:rgb(5,59,92); */
+	color: #000000;
+	text-decoration: none;
+	font-size: 42px;
+	display: block;
+	cursor: pointer;
+	-webkit-box-reflect: below 2px
+		-webkit-gradient(linear, left top, left bottom, from(transparent),
+		color-stop(0.52, transparent), to(white) );
+}
+
+.content {
+	overflow: hidden;
+	height: 600px;
+	background: url(front_page_logo.png) no-repeat left top;
+}
+
+.content .right {
+	width: 410px;
+	padding-top: 70px;
+	padding-left: 40px;
+	float: right;
+	display: inline;
+}
+
+.content .left {
+	width: 500px;
+	float: left;
+	display: inline;
+}
+
+.header {
+	width: 920px;
+	height: 100px;
+	margin-left: 40px;
+	background: url(logo1.png) no-repeat left top;
+}
+
+.footer {
+	width: 910px;
+	padding-left: 100px;
+}
+
+/** LOGO */
+#logo {
+	
+}
+
+#logo h1,#logo p {
+	margin: 0;
+	padding: 0px;
+	line-height: normal;
+}
+
+#logo h1 {
+	padding-left: 40px;
+	padding-top: 90px;
+}
+
+#logo h1 a {
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #FFFFFF;
+}
+
+#logo h1 a:hover {
+	text-decoration: underline;
+}
+
+#logo p {
+	padding: 0px 0 0 42px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#logo p a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo p a:hover {
+	text-decoration: underline;
+}
